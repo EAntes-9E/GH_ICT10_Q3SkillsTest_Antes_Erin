@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Skills Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #dfe9f3, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 320px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(to right, #ff7e5f, #4facfe);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .error { color: red; }
+        .success { color: green; }
+
+        footer {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: gray;
+            opacity: 0.7;
+            letter-spacing: 0.5px;
+        }
+
+    </style>
+     
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Create Account</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button py-click="check">Create</button>
+
+        <p id="result" class="message"></p>
+    </div>
+
+    <footer>Erin Gayle Antes | 10-Emerald</footer>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
